@@ -1,0 +1,14 @@
+Assuming that the new feature API will be used to get data constantly.
+
+The near real-time data response could be achived by using event-driven
+approach.
+
+To reduce data fetching latency, we will use Redis as a cache layer.
+
+Then to get latest updated data from the existing API microservice near real-time, we will use
+message services such as AWS SNS/SQS or Kafka to notify changes to
+our new feature API. 
+
+After receiving the notification, we will re-fetch
+the data from the existing API microservice (the API that triggers data update event),
+then store the updated data into Redis for future data retrieval.

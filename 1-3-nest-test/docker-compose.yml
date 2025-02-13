@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  interview-nest-test_dev_db:
+    image: postgres:17
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: interview-nest-test-db
+    networks:
+      - interview-nest-test-db
+networks:
+  interview-nest-test-db:

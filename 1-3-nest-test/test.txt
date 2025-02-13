@@ -1,0 +1,14 @@
+Additional Requirements:
+- Validation
+    I use ValidationPipe to validate the integrity of the data inputs
+
+- Database Design
+    To be able to store data for product details that supports multilingual, I created 2 database tables.
+    1. products : Used for storing product informations such as price, category, product image link.
+    2. product_translations : Used for storing the translations for product name and description of each languages.
+    
+    Then connect these 2 database table using relationship 1 to many meaning 1 'products' record can have multiple 'product_translations'.
+
+- Testing Strategy
+    I will use Jest to handle unit tests. I will use Jest + Supertest for automated integration testing and Postman for manual integration testing.
+    For E2E testing, I will be using Jest + Supertest like integration testing, however I will make another database for testing with the entire workflow to avoid mocking data.

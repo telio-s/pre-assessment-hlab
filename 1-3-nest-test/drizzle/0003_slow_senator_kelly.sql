@@ -1,0 +1,1 @@
+ALTER TABLE "product_translations" ADD COLUMN "value" varchar(255) NOT NULL;

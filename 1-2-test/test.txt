@@ -1,0 +1,13 @@
+This is the performance test strategy plan that I will propose to the project manager.
+	1.	Define Clear Performance Testing Goals & Criteria
+To ensure accurate test results, we need to define key performance criteria, such as user concurrency, response time, load time, and transaction rate. This helps set clear expectations.
+	2.	Set Up a Test Environment
+The test environment should closely resemble the production environment to identify potential issues early. This ensures that new code changes do not negatively impact system performance before deployment.
+	3.	Plan and Design Test Scenarios
+Define key user workflows, test cases, and expected system behavior. This helps in creating test scenarios that resemble the real use cases.
+	4.	Select the Right Tools & Integrate with CI/CD
+Choose appropriate performance testing tools based on the testing criteria and team's experience. Possibly integrate some tools into the CI/CD pipeline to catch performance issues.
+	5.	Execute Tests
+Run the planned test scenarios, simulating various load conditions such as normal usage, peak loads, and stress tests to assess system behavior under pressure.
+	6.	Monitor, Analyze, and Optimize
+Setup monitoring system, such as AWS cloud watch, to monitor performance during testing, analyze results to identify bottlenecks, and make necessary optimizations for future improvements.

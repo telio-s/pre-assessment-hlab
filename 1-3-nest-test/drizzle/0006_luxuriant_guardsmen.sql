@@ -1,0 +1,1 @@
+ALTER TABLE "product_translations" RENAME COLUMN "value" TO "name";

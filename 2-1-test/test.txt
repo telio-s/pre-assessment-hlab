@@ -1,0 +1,6 @@
+Used for memorizing function, preventing the re-creation of the function
+on every render. This hook could be used to prevent unnecessary re-rendering
+for example, components will re-render when states/props changed, meaning
+if these is a function in props, it will always re-render, however with useCallback,
+the function will be memorized as the same one, causing the component to not
+re-render.

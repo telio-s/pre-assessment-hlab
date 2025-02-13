@@ -1,0 +1,1 @@
+ALTER TABLE "product_translations" DROP COLUMN "name";
